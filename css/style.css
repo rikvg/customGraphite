@@ -1,0 +1,138 @@
+:root {
+    --graphite-dark: #333333;
+    --graphite-medium: #555555;
+    --graphite-light: #777777;
+    --accent-color: #C0C0C0;
+    --text-color: #EFEFEF;
+    --background-color: #F5F5F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--graphite-dark);
+}
+
+.navbar {
+    background-color: var(--graphite-dark) !important;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--graphite-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--graphite-light);
+    border-color: var(--graphite-light);
+    color: var(--text-color);
+}
+
+.btn-primary:focus, .btn-primary:active, .btn-primary:focus:active {
+    background-color: var(--accent-color) !important; /* Ensure the background color stays the same */
+    border-color: var(--accent-color) !important; /* Ensure the border color stays the same */
+    color: var(--graphite-dark) !important; /* Ensure the text color stays the same */
+    box-shadow: none !important; /* Remove the default focus shadow */
+    outline: none !important; /* Remove the default outline */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--graphite-dark);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--graphite-dark);
+}
+
+.card-text {
+    color: var(--graphite-medium);
+}
+
+footer {
+    background-color: var(--graphite-dark);
+    color: var(--text-color);
+}
+
+.technical-specs .card {
+    background-color: var(--graphite-light);
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+
+.technical-specs h3 {
+    color: var(--accent-color);
+}
+
+.card-img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* This sets a 4:3 aspect ratio. Adjust as needed */
+    overflow: hidden;
+}
+
+.card-img-container .product-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero {
+    /* Your existing hero styles */
+}
+
+.hero-title, .hero-subtitle {
+    color: white;
+}
+
+.centered-list {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+.centered-list li {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.card {
+    background-color: #f8f9fa; /* Light grey background */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+
+
